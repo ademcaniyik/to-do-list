@@ -112,6 +112,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - [@yourusername](https://github.com/ademcaniyik)
+Name - [@ademcaniyik](https://github.com/ademcaniyik)
 
 Project Link: [https://github.com/ademcaniyik/to-do-list](https://github.com/ademcaniyik/todo-list)
