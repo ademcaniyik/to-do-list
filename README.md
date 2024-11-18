@@ -110,8 +110,8 @@ todo-list/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
+## İletişim
 
-Your Name - [@yourusername](https://github.com/ademcaniyik)
+Adem Can Iyık - [@ademcaniyik](https://github.com/ademcaniyik)
 
-Project Link: [https://github.com/ademcaniyik/to-do-list](https://github.com/ademcaniyik/todo-list)
+Project Link: [https://github.com/ademcaniyik/to-do-list](https://github.com/ademcaniyik/to-do-list)
