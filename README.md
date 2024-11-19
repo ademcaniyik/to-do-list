@@ -1,117 +1,156 @@
 # Todo List Application
 
-A full-stack Todo List application built with React, TypeScript, Express.js, and MySQL.
+A full-stack Todo List application with user authentication, built using React, TypeScript, Express.js, and MongoDB.
+
+## Developer
+
+- **Name:** Ademcan
+- **Email:** [ademcaniyik7@gmail.com](mailto:ademcaniyik7@gmail.com)
+- **GitHub:** [ademcan](https://github.com/ademcan)
 
 ## Features
 
-- Create, Read, Update, and Delete todos
-- Edit existing todos
-- Mark todos as completed
-- Persistent storage with MySQL database
-- Modern UI with Material-UI
-- Type-safe with TypeScript
+- 🔐 User Authentication (JWT)
+- 📝 Create, Read, Update, Delete Todos
+- 🔍 Filter and Sort Todos
+- 💫 Real-time Updates
+- 🎨 Modern UI with Material-UI & Chakra UI
+- 🔒 Secure Password Management
+- 📱 Responsive Design
+
+## Tech Stack
+
+### Frontend
+
+- React
+- TypeScript
+- Material-UI
+- Chakra UI
+- React Router v6
+- Axios
+
+### Backend
+
+- Express.js
+- MongoDB with Mongoose
+- JWT Authentication
+- TypeScript
+- CORS middleware
 
 ## Prerequisites
 
-Before you begin, ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (v14 or higher)
-- [XAMPP](https://www.apachefriends.org/) (for MySQL database)
-- [Git](https://git-scm.com/)
+- Node.js (v14 or higher)
+- MongoDB (v4.4 or higher)
+- npm or yarn
 
 ## Installation
 
 1. Clone the repository:
+
 ```bash
-git clone https://github.com/ademcaniyik/to-do-list.git
-cd todo-list
+git clone <repository-url>
+cd to-do-list
 ```
 
-2. Install frontend dependencies:
+1. Install frontend dependencies:
+
 ```bash
 npm install
 ```
 
-3. Install backend dependencies:
+1. Install backend dependencies:
+
 ```bash
 cd server
 npm install
 ```
 
-4. Set up the database:
-- Start XAMPP and ensure MySQL service is running
-- Open phpMyAdmin (http://localhost/phpmyadmin)
-- Create a new database named 'todo_list'
-- Import the database schema from `server/database.sql`
+1. Create .env files:
+
+Frontend (.env):
+
+```env
+REACT_APP_API_URL=http://localhost:3002
+```
+
+Backend (server/.env):
+
+```env
+MONGODB_URI=mongodb://127.0.0.1:27017/todo_db
+JWT_SECRET=your_jwt_secret_key
+PORT=3002
+```
 
 ## Running the Application
 
+1. Start MongoDB service
+
 1. Start the backend server:
+
 ```bash
 cd server
-npm run dev
-```
-The backend will run on http://localhost:3001
-
-2. In a new terminal, start the frontend:
-```bash
-cd ..  # Go back to root directory
 npm start
 ```
-The application will open in your browser at http://localhost:3000
 
-## Usage
+1. Start the frontend application (in a new terminal):
 
-- **Adding a Todo**: Enter your task in the input field and click "Add" or press Enter
-- **Editing a Todo**: Click the edit (pencil) icon, make your changes, and click save
-- **Completing a Todo**: Click the checkbox next to the todo
-- **Deleting a Todo**: Click the delete (trash) icon
+```bash
+cd ..
+npm start
+```
 
-## Tech Stack
+The application will be available at:
 
-- **Frontend**:
-  - React
-  - TypeScript
-  - Material-UI
-  - Fetch API
+- Frontend: [http://localhost:3000](http://localhost:3000)
+- Backend API: [http://localhost:3002](http://localhost:3002)
 
-- **Backend**:
-  - Express.js
-  - TypeScript
-  - MySQL2
-  - CORS
+## API Endpoints
 
-- **Database**:
-  - MySQL
+### Authentication
+
+- POST `/api/auth/register` - Register new user
+- POST `/api/auth/login` - Login user
+- POST `/api/auth/change-password` - Change password
+
+### Todos
+
+- GET `/api/todos` - Get all todos for logged in user
+- POST `/api/todos` - Create new todo
+- PUT `/api/todos/:id` - Update todo
+- DELETE `/api/todos/:id` - Delete todo
+
+## Security Features
+
+- JWT based authentication
+- Password hashing
+- Protected routes
+- CORS configuration
+- Environment variables
+- Input validation
 
 ## Project Structure
 
-```
-todo-list/
-├── src/                   # Frontend source files
-│   ├── App.tsx           # Main application component
-│   └── types.ts          # TypeScript interfaces
-├── server/               # Backend source files
-│   ├── src/
-│   │   └── index.ts      # Express server setup
-│   ├── database.sql      # Database schema
-│   └── package.json      # Backend dependencies
-└── package.json          # Frontend dependencies
+```tree
+to-do-list/
+├── src/                    # Frontend source files
+│   ├── components/        # React components
+│   ├── api/              # API integration
+│   └── types/            # TypeScript types
+├── server/                # Backend source files
+│   ├── routes/           # API routes
+│   ├── models/           # MongoDB models
+│   └── middleware/       # Express middleware
+└── public/               # Static files
 ```
 
 ## Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## İletişim
-
-Adem Can Iyık - [@ademcaniyik](https://github.com/ademcaniyik)
-
-Project Link: [https://github.com/ademcaniyik/to-do-list](https://github.com/ademcaniyik/to-do-list)
+This project is licensed under the MIT License - see the LICENSE file for details.
