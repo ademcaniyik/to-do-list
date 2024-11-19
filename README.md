@@ -143,6 +143,17 @@ to-do-list/
 └── public/               # Static files
 ```
 
+## Recent Updates
+
+### 2024-01-09
+- 🔄 Added task completion status tracking
+- 📅 Implemented due date functionality for tasks
+- 🎨 Enhanced UI with new color schemes and animations
+- 🔍 Added search functionality for tasks
+- 📱 Improved mobile responsiveness
+- 🔒 Enhanced security features
+- 🐛 Fixed various bugs and improved performance
+
 ## Contributing
 
 1. Fork the repository
