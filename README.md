@@ -6,7 +6,7 @@ A full-stack Todo List application with user authentication, built using React, 
 
 - **Name:** Ademcan
 - **Email:** [ademcaniyik7@gmail.com](mailto:ademcaniyik7@gmail.com)
-- **GitHub:** [ademcan](https://github.com/ademcan)
+- **GitHub:** [ademcan](https://github.com/ademcaniyik)
 
 ## Features
 
